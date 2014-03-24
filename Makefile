@@ -82,6 +82,7 @@ $(C_TARGET_LIB):
 		-I$(JAVA_PLATFORM_INCLUDE) \
 		-I$(JAVA_INCLUDE) \
 		-shared \
+		-fPIC \
 		-o $(C_TARGET_LIB) \
 		$(shell find $(C_SRC_DIR) -name '*.c')
 
